@@ -7,12 +7,11 @@
   } else {
     mobile_text=settings.button_text;
   }
-
   api.decorateWidget('home-logo:after', helper => {
     const showExtraInfo = helper.attrs.topic;
     if(!showExtraInfo) {
       return h('div.logo-link', [
-      h('a.btn.btn-default.logo-button', {
+      h('a.btn.btn-default.discourse-logo-button', {
         href: settings.button_URL
       }, [
       h('span.mobile', mobile_text),

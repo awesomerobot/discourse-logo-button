@@ -9,7 +9,7 @@ button_URL:
 mobile_button_text: 
   type: string
   default: ""
-  description: optional
+  description: optional alternative text for screens under 550px wide<br/> If you want to hide the button on mobile entirely enter&colon; none
 
 button_text_color: 
   type: string
