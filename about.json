@@ -1,6 +1,6 @@
 {
   "name": "discourse-logo-button",
-  "about_url": "URL",
+  "about_url": "https://github.com/awesomerobot/discourse-logo-button",
   "component": "true",
-  "license_url": "URL"
+  "license_url": "https://github.com/awesomerobot/discourse-logo-button/blob/master/LICENSE"
 }
