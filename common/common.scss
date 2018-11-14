@@ -1,0 +1,32 @@
+.title {
+  display: flex;
+  align-items: center;
+}
+
+.logo-link {
+  display: inline-block;
+  margin-left: 2em;
+  vertical-align: bottom;
+  padding-bottom: 0.1em;
+  .btn.btn-default.logo-button {
+      background: $button-background-color; 
+      color: $button-text-color;
+    &:hover {
+        background: $button-hover-background-color; 
+        color: $button-hover-text-color;  
+    }
+  }
+  span.mobile {
+    display: none;
+  }
+  @media screen and (max-width: 500px) {
+    // Shorter button text for small screens
+    margin-left: 1em;
+    span {
+      display: none;
+      &.mobile {
+        display: block;
+      }
+    }
+  }
+}

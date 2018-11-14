@@ -1,0 +1,33 @@
+button_text: 
+  type: string
+  default: ""
+  
+button_URL: 
+  type: string
+  default: "/"
+
+mobile_button_text: 
+  type: string
+  default: ""
+  description: optional
+
+button_text_color: 
+  type: string
+  default: ""
+  description: optional
+
+button_background_color: 
+  type: string
+  default: ""
+  description: optional
+
+button_hover_text_color: 
+  type: string
+  default: ""
+  description: optional
+
+button_hover_background_color: 
+  type: string
+  default: ""
+  description: optional
+

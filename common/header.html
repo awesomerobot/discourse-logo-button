@@ -1,0 +1,24 @@
+<script type="text/discourse-plugin" version="0.8"> 
+  const { h } = require('virtual-dom');
+  
+  let mobile_text;
+  if(settings.mobile_button_text) {
+    mobile_text=settings.mobile_button_text;
+  } else {
+    mobile_text=settings.button_text;
+  }
+
+  api.decorateWidget('home-logo:after', helper => {
+    const showExtraInfo = helper.attrs.topic;
+    if(!showExtraInfo) {
+      return h('div.logo-link', [
+      h('a.btn.btn-default.logo-button', {
+        href: settings.button_URL
+      }, [
+      h('span.mobile', mobile_text),
+      h('span', settings.button_text ),
+      ])
+      ]);
+    }
+  });
+</script>
